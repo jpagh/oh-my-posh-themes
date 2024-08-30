@@ -83,7 +83,7 @@
   ],
   "transient_prompt": {
     "template": "{{ .Folder }}<#ffdd86> > </>",
-    "foreground": "foreground"
+    "foreground": "p:foreground"
   },
   "palette": {
     "background": "#1D1F21",
