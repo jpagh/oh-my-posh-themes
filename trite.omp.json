@@ -39,7 +39,7 @@
         "type": "python"
         },
         {
-            "foreground": "p:white",
+            "foreground": "p:foreground",
             "properties": {
                 "style": "full"
             },
@@ -48,7 +48,7 @@
             "type": "path"
         },
         {
-          "foreground": "p:blue",
+          "foreground": "p:white",
           "properties": {
             "branch_icon": "\ue725 ",
             "cherry_pick_icon": "\ue29b ",
@@ -68,7 +68,7 @@
         {
             "foreground": "p:yellow",
             "foreground_templates": [
-              "{{ if gt .Code 0 }}#42a9ff{{ end }}"
+              "{{ if gt .Code 0 }}p:red{{ end }}"
             ],
             "properties": {
               "always_enabled": true
