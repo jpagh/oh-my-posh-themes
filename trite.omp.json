@@ -39,7 +39,7 @@
         "type": "python"
         },
         {
-            "foreground": "p:foreground",
+            "foreground": "p:white",
             "properties": {
                 "style": "full"
             },
@@ -83,7 +83,7 @@
   ],
   "transient_prompt": {
     "template": "{{ .Folder }}<#ffdd86> > </>",
-    "foreground": "p:foreground"
+    "foreground": "p:white"
   },
   "palette": {
     "background": "#1D1F21",
