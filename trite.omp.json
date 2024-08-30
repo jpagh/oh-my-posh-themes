@@ -1,6 +1,7 @@
 {
-  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "blocks": [
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "version": 2,
+    "blocks": [
     {
       "alignment": "left",
       "segments": [
@@ -80,5 +81,8 @@
       "type": "prompt"
     }
   ],
-  "version": 2
+  "transient_prompt": {
+    "template": "{{ .Folder }} ",
+    "foreground": "white"
+  }
 }
