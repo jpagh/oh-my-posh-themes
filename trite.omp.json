@@ -6,31 +6,31 @@
       "alignment": "left",
       "segments": [
         {
-        "foreground": "white",
+        "foreground": "p:white",
         "style": "powerline",
         "template": "{{ if .WSL }}WSL at {{.Icon}}  {{ end }}",
         "type": "os"
         },
         {
-        "foreground": "red",
+        "foreground": "p:red",
         "style": "plain",
         "template": "{{ if .WSL }}root{{else}}admin{{ end }} ",
         "type": "root"
         },
         {
-        "foreground": "#06A4CE",
+        "foreground": "p:blue",
         "style": "powerline",
         "template": "\ue798 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} | ",
         "type": "dart"
         },
         {
-        "foreground": "#6CA35E",
+        "foreground": "p:green",
         "style": "powerline",
         "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} | ",
         "type": "node"
         },
         {
-        "foreground": "#FFDE57",
+        "foreground": "p:yellow",
         "properties": {
             "fetch_virtual_env": true
         },
@@ -39,7 +39,7 @@
         "type": "python"
         },
         {
-            "foreground": "white",
+            "foreground": "p:white",
             "properties": {
                 "style": "full"
             },
@@ -48,7 +48,7 @@
             "type": "path"
         },
         {
-          "foreground": "cyan",
+          "foreground": "p:cyan",
           "properties": {
             "branch_icon": "\ue725 ",
             "cherry_pick_icon": "\ue29b ",
@@ -66,7 +66,7 @@
           "type": "git"
         },
         {
-            "foreground": "#ffdd86",
+            "foreground": "p:yellow",
             "foreground_templates": [
               "{{ if gt .Code 0 }}#42a9ff{{ end }}"
             ],
@@ -84,5 +84,27 @@
   "transient_prompt": {
     "template": "{{ .Folder }}<#ffdd86> > </>",
     "foreground": "white"
+  },
+  "palette": {
+    "background": "#1D1F21",
+    "black": "#000000",
+    "blue": "#81A2BE",
+    "brightBlack": "#000000",
+    "brightBlue": "#81A2BE",
+    "brightCyan": "#8ABEB7",
+    "brightGreen": "#B5BD68",
+    "brightPurple": "#B294BB",
+    "brightRed": "#CC6666",
+    "brightWhite": "#FFFFFF",
+    "brightYellow": "#F0C674",
+    "cursorColor": "#C5C8C6",
+    "cyan": "#8ABEB7",
+    "foreground": "#C5C8C6",
+    "green": "#B5BD68",
+    "purple": "#B294BB",
+    "red": "#CC6666",
+    "selectionBackground": "#373B41",
+    "white": "#FFFFFF",
+    "yellow": "#F0C674"
   }
 }
