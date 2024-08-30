@@ -82,7 +82,7 @@
     }
   ],
   "transient_prompt": {
-    "template": "{{ .Folder }} > ",
+    "template": "{{ .Folder }}<#ffdd86> > </>",
     "foreground": "white"
   }
 }
