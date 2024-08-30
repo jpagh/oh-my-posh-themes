@@ -87,7 +87,7 @@
           "properties": {
             "display_mode": "files",
             "fetch_package_manager": false,
-            "home_enabled": false
+            "home_enabled": true
           },
           "background": "transparent",
           "foreground": "p:green"
