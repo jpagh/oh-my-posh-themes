@@ -44,7 +44,7 @@
                 "style": "full"
             },
             "style": "plain",
-            "template": "{{ .Path }} ",
+            "template": "<b>{{ .Path }}</b> ",
             "type": "path"
         },
         {
