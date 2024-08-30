@@ -105,7 +105,7 @@
         {
           "type": "python",
           "style": "plain",
-          "template": "\ue235 ",
+          "template": "\ue235 {{ .Venv }} ",
           "properties": {
             "display_mode": "files",
             "fetch_version": false,
