@@ -39,12 +39,12 @@
         "type": "python"
         },
         {
-            "foreground": "p:foreground",
+            "foreground": "p:white",
             "properties": {
                 "style": "full"
             },
             "style": "plain",
-            "template": "<b>{{ .Path }}</b> ",
+            "template": "{{ .Path }} ",
             "type": "path"
         },
         {
@@ -82,8 +82,8 @@
     }
   ],
   "transient_prompt": {
-    "template": "<b>{{ .Folder }}</b><#ffdd86> > </>",
-    "foreground": "p:foreground"
+    "template": "{{ .Folder }}<#ffdd86> > </>",
+    "foreground": "p:white"
   },
   "palette": {
     "background": "#1D1F21",
