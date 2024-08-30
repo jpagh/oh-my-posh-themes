@@ -44,7 +44,7 @@
                 "style": "full"
             },
             "style": "plain",
-            "template": "<b>{{ .Path }}</b> ",
+            "template": "{{ .Path }} ",
             "type": "path"
         },
         {
@@ -82,7 +82,7 @@
     }
   ],
   "transient_prompt": {
-    "template": "{{ .Folder }}<#ffdd86> > </>",
+    "template": "<b>{{ .Folder }}<#ffdd86> > </></b>",
     "foreground": "p:white"
   },
   "palette": {
