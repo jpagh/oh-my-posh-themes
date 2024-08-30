@@ -48,7 +48,7 @@
             "type": "path"
         },
         {
-          "foreground": "p:blue",
+          "foreground": "p:orange",
           "properties": {
             "branch_icon": "\ue725 ",
             "cherry_pick_icon": "\ue29b ",
@@ -85,26 +85,54 @@
     "template": "{{ .Folder }}<#ffdd86> > </>",
     "foreground": "p:white"
   },
-  "palette": {
-    "background": "#1D1F21",
-    "black": "#000000",
-    "blue": "#81A2BE",
-    "brightBlack": "#000000",
-    "brightBlue": "#81A2BE",
-    "brightCyan": "#8ABEB7",
-    "brightGreen": "#B5BD68",
-    "brightPurple": "#B294BB",
-    "brightRed": "#CC6666",
-    "brightWhite": "#FFFFFF",
-    "brightYellow": "#F0C674",
-    "cursorColor": "#C5C8C6",
-    "cyan": "#8ABEB7",
-    "foreground": "#C5C8C6",
-    "green": "#B5BD68",
-    "purple": "#B294BB",
-    "red": "#CC6666",
-    "selectionBackground": "#373B41",
-    "white": "#FFFFFF",
-    "yellow": "#F0C674"
-  }
+  "palettes": {
+    "template": "{{ if eq .Mode \"light\" }}tomorrow{{ else }}tomorrow-night{{ end }}",
+    "list": {
+        "tomorrow": {
+            "background": "#ffffff",
+            "black": "#000000",
+            "blue": "#81A2BE",
+            "brightBlack": "#8e908c",
+            "brightBlue": "#81A2BE",
+            "brightCyan": "#8ABEB7",
+            "brightGreen": "#B5BD68",
+            "brightPurple": "#B294BB",
+            "brightRed": "#CC6666",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#F0C674",
+            "cursorColor": "#4d4d4c",
+            "cyan": "#8ABEB7",
+            "foreground": "#4d4d4c",
+            "green": "#B5BD68",
+            "purple": "#B294BB",
+            "red": "#CC6666",
+            "selectionBackground": "#d6d6d6",
+            "white": "#FFFFFF",
+            "yellow": "#F0C674"
+            },
+        "tomorrow-night": {
+            "background": "#1D1F21",
+            "black": "#000000",
+            "blue": "#81A2BE",
+            "brightBlack": "#000000",
+            "brightBlue": "#81A2BE",
+            "brightCyan": "#8ABEB7",
+            "brightGreen": "#B5BD68",
+            "brightPurple": "#B294BB",
+            "brightRed": "#c82829",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#F0C674",
+            "cursorColor": "#C5C8C6",
+            "cyan": "#8ABEB7",
+            "foreground": "#C5C8C6",
+            "green": "#B5BD68",
+            "orange": "#de935f",
+            "purple": "#B294BB",
+            "red": "#c82829",
+            "selectionBackground": "#373B41",
+            "white": "#FFFFFF",
+            "yellow": "#F0C674"
+            }
+        }
+    }
 }
