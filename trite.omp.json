@@ -14,7 +14,7 @@
         {
         "foreground": "p:red",
         "style": "plain",
-        "template": "{{ if .WSL }}root{{else}}admin{{ end }} ",
+        "template": "{{ if .WSL }}root{{else}}\uf0e7{{ end }} ",
         "type": "root"
         },
         {
