@@ -41,7 +41,8 @@
         {
             "foreground": "p:white",
             "properties": {
-                "style": "full"
+                "style": "full",
+                "right_format": "<b>%s</b>"
             },
             "style": "plain",
             "template": "{{ .Path }} ",
