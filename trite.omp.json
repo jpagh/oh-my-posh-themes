@@ -42,7 +42,7 @@
             "foreground": "p:foreground",
             "properties": {
                 "style": "full",
-                "right_format": "<b><p:white>%s</></b>"
+                "right_format": "<p:white>%s</>"
             },
             "style": "plain",
             "template": "{{ .Path }} ",
@@ -51,7 +51,7 @@
         {
           "foreground": "p:green",
           "style": "plain",
-          "template": "<b>{{ .HEAD }}</b> ",
+          "template": "{{ .HEAD }} ",
           "type": "git"
         },
         {
