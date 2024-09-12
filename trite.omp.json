@@ -55,10 +55,13 @@
           "type": "git"
         },
         {
-            "foreground": "p:yellow",
+            "foreground": "p:white",
             "foreground_templates": [
               "{{ if gt .Code 0 }}p:red{{ end }}"
             ],
+            "properties": {
+              "always_enabled": true
+            },
             "style": "plain",
             "template": ">\u2800",
             "type": "status"
