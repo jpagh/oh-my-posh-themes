@@ -60,7 +60,8 @@
               "{{ if gt .Code 0 }}p:red{{ end }}"
             ],
             "properties": {
-              "always_enabled": true
+              "always_enabled": true,
+              "right_format": "<p:white>"
             },
             "style": "plain",
             "template": "> ",
