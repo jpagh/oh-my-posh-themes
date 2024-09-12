@@ -3,71 +3,71 @@
     "version": 2,
     "blocks": [
     {
-      "alignment": "left",
-      "segments": [
-        {
-        "foreground": "p:white",
-        "style": "powerline",
-        "template": "{{ if .WSL }}WSL at {{.Icon}}  {{ end }}",
-        "type": "os"
-        },
-        {
-        "foreground": "p:red",
-        "style": "plain",
-        "template": "{{ if .WSL }}root{{else}}\uf0e7{{ end }} ",
-        "type": "root"
-        },
-        {
-        "foreground": "p:blue",
-        "style": "powerline",
-        "template": "\ue798 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} | ",
-        "type": "dart"
-        },
-        {
-        "foreground": "p:green",
-        "style": "powerline",
-        "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} | ",
-        "type": "node"
-        },
-        {
-        "foreground": "p:yellow",
-        "properties": {
-            "fetch_virtual_env": true
-        },
-        "style": "plain",
-        "template": "\ue235 {{ .Venv }} ",
-        "type": "python"
-        },
-        {
-            "foreground": "p:foreground",
-            "properties": {
-                "style": "full",
-                "right_format": "<p:white>%s</>"
+        "alignment": "left",
+        "segments": [
+            {
+                "foreground": "p:white",
+                "style": "powerline",
+                "template": "{{ if .WSL }}WSL at {{.Icon}}  {{ end }}",
+                "type": "os"
             },
-            "style": "plain",
-            "template": "{{ .Path }} ",
-            "type": "path"
-        },
-        {
-          "foreground": "p:green",
-          "style": "plain",
-          "template": "{{ .HEAD }} ",
-          "type": "git"
-        },
-        {
-            "foreground": "p:white",
-            "foreground_templates": [
-              "{{ if gt .Code 0 }}p:red{{ end }}"
-            ],
-            "properties": {
-              "always_enabled": true
+            {
+                "foreground": "p:red",
+                "style": "plain",
+                "template": "{{ if .WSL }}root{{else}}\uf0e7{{ end }} ",
+                "type": "root"
             },
-            "style": "plain",
-            "template": ">\u2800",
-            "type": "status"
-          }
-      ],
-      "type": "prompt"
+            {
+                "foreground": "p:blue",
+                "style": "powerline",
+                "template": "\ue798 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} | ",
+                "type": "dart"
+            },
+            {
+                "foreground": "p:green",
+                "style": "powerline",
+                "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} | ",
+                "type": "node"
+            },
+            {
+                "foreground": "p:yellow",
+                "properties": {
+                    "fetch_virtual_env": true
+                },
+                "style": "plain",
+                "template": "\ue235 {{ .Venv }} ",
+                "type": "python"
+            },
+            {
+                "foreground": "p:foreground",
+                "properties": {
+                    "style": "full",
+                    "right_format": "<p:white>%s</>"
+                },
+                "style": "plain",
+                "template": "{{ .Path }} ",
+                "type": "path"
+            },
+            {
+                "foreground": "p:green",
+                "style": "plain",
+                "template": "{{ .HEAD }} ",
+                "type": "git"
+            },
+            {
+                "foreground": "p:yellow",
+                "foreground_templates": [
+                    "{{ if gt .Code 0 }}p:red{{ end }}"
+                ],
+                "properties": {
+                    "always_enabled": true
+                },
+                "style": "plain",
+                "template": "> ",
+                "type": "status"
+            }
+        ],
+        "type": "prompt"
     }
   ],
   "transient_prompt": {
