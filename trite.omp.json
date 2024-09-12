@@ -59,11 +59,8 @@
             "foreground_templates": [
               "{{ if gt .Code 0 }}p:red{{ end }}"
             ],
-            "properties": {
-              "always_enabled": true
-            },
             "style": "plain",
-            "template": "> \u2800",
+            "template": ">\u2800",
             "type": "status"
           }
       ],
