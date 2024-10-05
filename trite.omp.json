@@ -56,6 +56,12 @@
                 "type": "git"
             },
             {
+                "foreground": "p:green",
+                "style": "plain",
+                "template": "{{.Branch}} {{.Status.String}} ",
+                "type": "fossil"
+            },
+            {
                 "foreground": "p:yellow",
                 "foreground_templates": [
                     "{{ if gt .Code 0 }}p:red{{ end }}"
