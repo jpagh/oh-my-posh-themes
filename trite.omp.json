@@ -58,7 +58,7 @@
             {
                 "foreground": "p:green",
                 "style": "plain",
-                "template": "\ue0a0 {{.Branch}} {{.Status.String}} ",
+                "template": "\ue725 {{.Branch}} {{.Status.String}} ",
                 "type": "fossil"
             },
             {
