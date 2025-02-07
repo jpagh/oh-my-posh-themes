@@ -19,12 +19,6 @@
                 "type": "root"
             },
             {
-                "foreground": "p:blue",
-                "style": "powerline",
-                "template": "\ue798 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} | ",
-                "type": "dart"
-            },
-            {
                 "foreground": "p:green",
                 "style": "powerline",
                 "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} | ",
@@ -54,12 +48,6 @@
                 "style": "plain",
                 "template": "{{ .HEAD }} ",
                 "type": "git"
-            },
-            {
-                "foreground": "p:green",
-                "style": "plain",
-                "template": "\ue0a0 {{.Branch}} {{.Status.String}} ",
-                "type": "fossil"
             },
             {
                 "foreground": "p:yellow",
